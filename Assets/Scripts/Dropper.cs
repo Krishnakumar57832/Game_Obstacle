@@ -33,7 +33,7 @@ public class Dropper : MonoBehaviour
         _rb.useGravity = true;
         if(Time.time >= 2f)
         {
-            _rb.GetComponent<Rigidbody>().AddForce(transform.right, ForceMode.Force );
+            _rb.GetComponent<Rigidbody>().AddForce(-transform.right, ForceMode.Force );
         }
         
     }
